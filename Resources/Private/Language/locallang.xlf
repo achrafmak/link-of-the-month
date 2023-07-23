@@ -6,6 +6,24 @@
             <authorEmail>maktoufachraf@gmail.com</authorEmail>
         </header>
         <body>
+         <trans-unit id="link_of_the_month_content_title">
+         <source>Link of the Month</source>
+         </trans-unit>
+         <trans-unit id="link_of_the_month_content_description">
+         <source>Adds link entries and month and display 1 link of the current month</source>
+         </trans-unit>
+         <trans-unit id="link_of_the_month_content_item_tile_new_record">
+         <source>Add new link</source>
+         </trans-unit>
+         <trans-unit id="link_of_the_month_content_item_text">
+         <source>Link text</source>
+         </trans-unit>
+         <trans-unit id="link_of_the_month_content_item_link">
+         <source>Link</source>
+         </trans-unit>
+         <trans-unit id="link_of_the_month_content_item_month">
+         <source>Month</source>
+         </trans-unit>
         </body>
     </file>
 </xliff>

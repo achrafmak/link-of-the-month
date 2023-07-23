@@ -1,0 +1,51 @@
+.ce-link-of-the-month .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.ce-link-of-the-month .headline{
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.ce-link-of-the-month .link {
+    display: inline-block;
+    vertical-align: top;
+    height: 34px;
+    line-height: 36px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #00c17f;
+    letter-spacing: 0.1em;
+    text-align: center;
+    font-size: 16px;
+    margin: 10px;
+    position: relative;
+}
+.ce-link-of-the-month .underline {
+    border: 2px solid transparent;
+}
+.ce-link-of-the-month .underline::after {
+    width: 0%;
+    height: 2px;
+    display: block;
+    background-color: #00c17f;
+    content: " ";
+    position: absolute;
+    top: 34px;
+    left: 50%;
+    -webkit-transition: left 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), width 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition: left 0.2s cubic-bezier(0.215, 0.61, 0.355, 1), width 0.2s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.ce-link-of-the-month .underline:hover::after {
+    width: 100%;
+    height: 2px;
+    display: block;
+    background-color: #00c17f;
+    content: " ";
+    position: absolute;
+    top: 34px;
+    left: 0;
+}

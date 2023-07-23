@@ -1,0 +1,15 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      xmlns:lom="CodeRed\LinkOfTheMonth\ViewHelpers"
+      data-namespace-typo3-fluid="true">
+<div class="ce-link-of-the-month" id="c{data.uid}">
+    <div class="container">
+        <f:if condition="{links -> f:count()} > 0">
+
+            <div class="headline">Link Of The Month</div>
+            <f:variable name="link" value="{lom:randomArrayValue(array: links, count: 1)}"/>
+            <f:link.typolink parameter="{link.data.tx_cr_repeater_link }" class="link underline">{link.data.tx_cr_repeater_text}</f:link.typolink>
+        </f:if>
+
+    </div>
+</div>
+</html>
