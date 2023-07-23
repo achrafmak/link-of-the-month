@@ -1,0 +1,13 @@
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+        link_of_the_month_content {
+            iconIdentifier = content-idea
+            title = LLL:EXT:link_of_the_month/Resources/Private/Language/locallang.xlf:link_of_the_month_content_title
+            description = LLL:EXT:link_of_the_month/Resources/Private/Language/locallang.xlf:link_of_the_month_content_description
+            tt_content_defValues {
+                CType = link_of_the_month_content
+            }
+        }
+    }
+    show := addToList(link_of_the_month_content)
+}

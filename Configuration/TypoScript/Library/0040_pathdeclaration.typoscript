@@ -1,0 +1,11 @@
+lib.contentElement {
+  templateRootPaths {
+    30 = {$resDir}/Private/Templates/FluidStyledContent/
+  }
+  partialRootPaths {
+    30 = {$resDir}/Private/Partials/FluidStyledContent/
+  }
+  layoutRootPaths {
+    30 = {$resDir}/Private/Layouts/FluidStyledContent/
+  }
+}

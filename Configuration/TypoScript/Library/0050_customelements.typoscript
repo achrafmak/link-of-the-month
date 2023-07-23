@@ -1,0 +1,23 @@
+tt_content {
+    link_of_the_month_content =< lib.contentElement
+    link_of_the_month_content {
+        templateName = LinkOfTheMonth
+        dataProcessing {
+            10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            10 {
+                if.isTrue.field = tx_cr_repeater_link_of_the_month_items
+                table = tx_cr_repeater_link_of_the_month_items
+                pidInList.field = pid
+                where {
+                    dataWrap = parentid=###uid### AND deleted=0 AND hidden=0 AND tx_cr_repeater_date = {date:m}
+                }
+                orderBy = sorting
+                markers {
+                    uid.field = uid
+                }
+
+                as = links
+            }
+        }
+    }
+}
